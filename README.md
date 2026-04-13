@@ -4,6 +4,16 @@ A Claude Code skill that pressure-tests implementation plans and specs before yo
 
 It does **not** write code. It reviews.
 
+## Quick install
+
+One line — paste into Claude Code or your shell, then restart Claude Code:
+
+```bash
+git clone https://github.com/commodore65/plan-pressure-test ~/.claude/skills/plan-pressure-test
+```
+
+The skill is then available as `/plan-pressure-test` or via trigger phrases like *"pressure test this plan"*.
+
 ## What it does
 
 Given a plan, spec, or proposal, the skill runs a structured review pass across five lenses:
@@ -33,24 +43,6 @@ Trigger phrases: *"pressure test this plan"*, *"stress test the scope"*, *"think
 | **SCOPE EXPANSION** | Push scope up — "what would make this 10x better for 2x the effort?" |
 | **HOLD SCOPE** | Scope is locked. Make the existing plan bulletproof. |
 | **SCOPE REDUCTION** | Find the minimum version that validates the core hypothesis. Cut everything else. |
-
-## Install
-
-Copy the skill into your Claude Code skills directory:
-
-```bash
-git clone https://github.com/commodore65/plan-pressure-test.git ~/.claude/skills/plan-pressure-test
-```
-
-Or if you already have a skills directory:
-
-```bash
-mkdir -p ~/.claude/skills/plan-pressure-test
-curl -o ~/.claude/skills/plan-pressure-test/SKILL.md \
-  https://raw.githubusercontent.com/commodore65/plan-pressure-test/main/SKILL.md
-```
-
-Restart Claude Code. The skill is now available as `/plan-pressure-test`.
 
 ## Usage
 
