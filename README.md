@@ -1,5 +1,8 @@
 # plan-pressure-test
 
+![plan-pressure-test](assets/banner.png)
+
+
 A Claude Code skill that pressure-tests implementation plans and specs before you build. It challenges scope in both directions, surfaces hidden failure modes, and returns a structured verdict with concrete next steps.
 
 It does **not** write code. It reviews.
